@@ -1,0 +1,9 @@
+Currently the types of quarters are hardcoded but it shouldn't be tough to expand the kinds of quarter systems you wish to define for your specific project. By default the gem sets up the US fiscal calendar's definition of quarters (October-December, January-March, April-June, and July-September).
+
+Calling Quarter.general(n) where n refers to the n'th quarter of this particular year returns the Quarter object (which is a subclass of Range with a begin and end date). The boundary dates are of a subclass QuarterBoundaryDate.
+
+If n exceeds the number of quarters in the current system, it will cycle so that in a system with 4 quarters, Quarter.general(1) is the same as Quarter.general(5) or Quarter.general(4n+1).
+
+On the other hand, Quarter.specific(n) where n exceeds the number of quarters will increment or decrement the year as required, so Quarter.specific(20) is a call for the value of the Quarter object which is the 20th quarter from the current calendar year.
+
+Quarter.current simply returns the Quarter object which contains the current date, and Quarter.current_number returns the numeric value of the current quarter in the quarter system (i.e. 1 for 1st quarter of the year).
