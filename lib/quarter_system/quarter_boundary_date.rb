@@ -6,7 +6,11 @@ class QuarterBoundaryDate < Date
     super(*args)
   end
 end
-class QuarterBeginDate < QuarterBoundaryDate; end
+
+class QuarterBeginDate < QuarterBoundaryDate
+  
+end
+
 class QuarterEndDate   < QuarterBoundaryDate
   def self.new(*args)
     super.end_of_month

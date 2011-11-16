@@ -117,3 +117,4 @@ class Quarter < Range
       end
     })
   end
+end

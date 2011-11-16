@@ -1,0 +1,7 @@
+== 0.1.0
+
+* Serious effort at making a legit gem.
+
+== 0.0.1
+
+* Testing setup
