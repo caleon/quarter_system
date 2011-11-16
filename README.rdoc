@@ -4,6 +4,8 @@ Currently the types of quarters are hardcoded but it shouldn't be tough to expan
 
 == Usage
 
+    gem 'quarter_system', '~> 0.1.2', :git => 'git://github.com/caleon/quarter_system.git'
+
 === Quarter.general()
 
 Calling Quarter.general(n) where n refers to the n'th quarter of this particular year returns the Quarter object (which is a subclass of Range with a begin and end date). The boundary dates are of a subclass QuarterBoundaryDate.
