@@ -16,4 +16,5 @@ gem "jquery-rails"
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
-gem 'schrodinger', :git => 'git://github.com/caleon/schrodinger.git'
+# gem 'schrodinger', :git => 'git://github.com/caleon/schrodinger.git'
+gem 'schrodingers-cat'

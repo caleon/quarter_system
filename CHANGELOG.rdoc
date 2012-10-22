@@ -1,3 +1,7 @@
+== 0.1.5
+
+* Using 'schrodingers-cat' off of RubyGems
+
 == 0.1.4
 
 * Support for Rails 3.2

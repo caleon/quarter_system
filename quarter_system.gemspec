@@ -19,11 +19,11 @@ Gem::Specification.new do |s|
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
-  
+
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
   s.add_development_dependency 'rails', '>= 3.1.1'
-  s.add_dependency 'schrodinger', '~> 0.1.3'  
+  s.add_dependency 'schrodingers-cat'
   s.add_development_dependency 'sqlite3'
 end
